@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'SF Pro';
+    src: url('../fonts/SF-Pro.OTF') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Glitten';
+    src: url('../fonts/Glitten.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron.otf') format('opentype');
+}
+
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  scrollbar-width: 0;
+  background-color: #141414;
+}
+
+.header {
+    font-family: 'SF Pro', serif;
+    font-size: 70px;
+    position: relative;
+    margin-bottom: -15px;
+    margin-top: 110px;
+    color: white;
+}
+
+
+/* Credits to Michael Romashov */
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.project-desc {
+    width: 50%;
+    font-family: 'SF Pro', serif;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-left: 460px;
+    position: center;
+    color: white;
+    
+    text-align: center;
+  
+}
+.project-img {
+    width: 37%;
+    border-radius: 8px;
+    align-content: center;
+    margin-top: 56px;
+    align-items: center;
+    box-shadow: 5px 15px 80px 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project-link {
+    position: center;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'SF Pro';
+    font-size: 56px;
+    color: #f26969;
+}
+.project-link:after {
+    content: '';
+    position: absolute;
+    width: 1.25em;
+    height: 1.25em;
+    background-image: url('../icons/arrow-up-right.svg');
+    background-size: cover;
+    transition: top 300ms ease-in-out, right 300ms ease-in-out;
+    top: -7px;
+    right: -23px;
+}
+.project-link:hover:after {
+    top: -12px;
+    right: -28px;
+}
+.badge-gray {
+    color: #383838;
+    background-color:#3838381a;
+}
+.badge-navy {
+    color: #334D6E;
+    background-color:#334D6E1a;
+}
+.badge-purple {
+    color: #DE2155;
+    background-color:#DE21551a;
+}
+.badge-teal {
+    color: #3C9ABA;
+    background-color:#3C9ABA1a;
+}
+/* End Michael Romashov CSS */
+
+.header-center {
+    font-family: 'Aileron', serif;
+    font-size: 43px;
+    position: center;
+    text-align: center;
+    margin-bottom: -15px;
+    margin-top: 110px;
+    color: #f26969;
+}
+
+
+.subheader {
+    font-family: 'SF Pro', serif;
+    position: center;
+    text-align: center;
+    color: #e6e6e6;
+}
+
+#title {
+    font-family: 'Aileron', serif;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    color: #f26969;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+#icons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.icon {
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.container {
+    width: 60%;
+    max-width: 1300px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 4% 0;
+}
+
+
+@media (max-width: 1300px) {
+  .container {
+        width: 75%;
+    }
+  .project-img {
+      width: 375px;
+    }
+  .project-link {
+    font-size: 36px;
+}
+  .project-desc {
+    margin-left: 110px;
+  }
+}
+
+@media (max-width: 3000px) {
+  intro {
+    font-size: 18px;
+  }
+}
